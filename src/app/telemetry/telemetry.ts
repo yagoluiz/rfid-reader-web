@@ -1,5 +1,5 @@
 export interface Telemetry {
-    id: string;
+    ip: string;
     temperature: number;
     isConnection: boolean;
 }

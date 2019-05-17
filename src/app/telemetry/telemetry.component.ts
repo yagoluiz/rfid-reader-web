@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { TelemetryService } from './telemetry.service';
+import { Telemetry } from './telemetry';
+
 @Component({
   selector: 'app-telemetry',
   templateUrl: './telemetry.component.html',
@@ -7,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TelemetryComponent implements OnInit {
 
-  constructor() { }
+  telemetries: Telemetry[];
+
+  constructor(private telemetryService: TelemetryService) { }
 
   ngOnInit() {
+    this.telemetries = this.telemetryService.getTelemetriesMock();
   }
-
 }
