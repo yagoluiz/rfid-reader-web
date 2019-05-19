@@ -11,7 +11,11 @@ import { Telemetry } from './telemetry';
 })
 export class TelemetryService {
 
-  constructor(private telemetryMock: TelemetryMock) { }
+  constructor(private defaultService: DefaultService, private telemetryMock: TelemetryMock) { }
+
+  public getTelemetries(limit: number = 100) : Observable<Telemetry[]> {
+    return this.defaultService.request<Telemetry[]>('get', `api/v1/telemetries/limit/${limit}`);
+  }
 
   public getTelemetriesMock() : Telemetry[] {
     return this.telemetryMock.telemetries;

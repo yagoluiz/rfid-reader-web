@@ -1,16 +1,19 @@
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">IP</th>
-      <th scope="col">Temperature</th>
-      <th scope="col">Connection</th>
-    </tr>
-  </thead>
-  <tbody>
-      <tr *ngFor="let telemetry of telemetries">
+<div class="container">
+  <h1>Telemetries: {{telemetriesMock.length}}</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">IP</th>
+        <th scope="col">Temperature</th>
+        <th scope="col">Connection</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let telemetry of telemetriesMock">
         <td>{{telemetry.ip}}</td>
         <td>{{telemetry.temperature}}</td>
         <td>{{telemetry.isConnection}}</td>
       </tr>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>

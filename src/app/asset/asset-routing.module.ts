@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { TelemetryComponent } from './telemetry.component';
+import { AssetComponent } from './asset.component';
 
 const routes: Routes = [
   {
-    path: 'telemetry',    
+    path: 'asset',    
     children: [
       {
         path: '',
-        component: TelemetryComponent
+        component: AssetComponent
       },
     ]
   }
@@ -19,4 +19,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class TelemetryRoutingModule { }
+export class AssetRoutingModule { }

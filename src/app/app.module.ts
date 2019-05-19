@@ -3,18 +3,24 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { TelemetryModule } from './telemetry/telemetry.module';
 import { AppRoutingModule } from './app-routing.module';
+import { LogModule } from './log/log.module';
+import { TelemetryModule } from './telemetry/telemetry.module';
+import { ReadModule } from './read/read.module';
+import { AssetModule } from './asset/asset.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    TelemetryModule
+    LogModule,
+    TelemetryModule,
+    ReadModule,
+    AssetModule
   ],
   providers: [],
   bootstrap: [AppComponent]

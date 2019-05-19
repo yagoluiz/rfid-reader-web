@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Assets: {{assetsMock.length}}</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Local</th>
+        <th scope="col">Type</th>
+        <th scope="col">EPC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let asset of assetsMock">
+        <td>{{asset.itemName}}</td>
+        <td>{{asset.localName}}</td>
+        <td>{{asset.typeName}}</td>
+        <td>{{asset.epc}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

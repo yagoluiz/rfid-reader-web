@@ -10,11 +10,28 @@ import { Telemetry } from './telemetry';
 })
 export class TelemetryComponent implements OnInit {
 
-  telemetries: Telemetry[];
+  telemetriesMock: Telemetry[] = [];
+  telemetries: Telemetry[] = [];
 
   constructor(private telemetryService: TelemetryService) { }
 
   ngOnInit() {
-    this.telemetries = this.telemetryService.getTelemetriesMock();
+    this.addTelemetriesMock();
+  }
+
+  addTelemetries() : void {
+    setInterval(() => {
+      console.log('refresh');
+      this.telemetryService.getTelemetries().subscribe(result => {
+        this.telemetries = result;
+      });
+    }, 3000);
+  }
+
+  addTelemetriesMock() : void {
+    setInterval(() => {
+      console.log('refresh');
+      this.telemetriesMock = this.telemetryService.getTelemetriesMock();
+    }, 3000);
   }
 }
