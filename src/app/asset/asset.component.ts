@@ -16,14 +16,16 @@ export class AssetComponent implements OnInit {
   constructor(private assetService: AssetService) { }
 
   ngOnInit() {
-    this.addAssetReadMock();
+    this.addAssetRead();
   }
 
   addAssetRead(): void {
     setInterval(() => {
       console.log('refresh');
       this.assetService.getAssetRead().subscribe(result => {
-        this.assets.push(result);
+        if(result !== null) {
+          this.assets.push(result);
+        }
       });
     }, 3000);
   }

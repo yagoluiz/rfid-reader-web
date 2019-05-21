@@ -16,7 +16,7 @@ export class LogComponent implements OnInit {
   constructor(private logService: LogService) { }
 
   ngOnInit() {
-    this.addLogsMock();
+    this.addLogs();
   }
 
   addLogs() : void {

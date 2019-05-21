@@ -16,7 +16,7 @@ export class ReadComponent implements OnInit {
   constructor(private readService: ReadService) { }
 
   ngOnInit() {
-    this.addReadsMock();
+    this.addReads();
   }
 
   addReads() : void {

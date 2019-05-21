@@ -16,7 +16,7 @@ export class TelemetryComponent implements OnInit {
   constructor(private telemetryService: TelemetryService) { }
 
   ngOnInit() {
-    this.addTelemetriesMock();
+    this.addTelemetries()
   }
 
   addTelemetries() : void {

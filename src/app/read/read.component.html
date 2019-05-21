@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Reads: {{readsMock.length}}</h1>
+  <h1>Reads: {{reads.length}}</h1>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -10,7 +10,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let read of readsMock">
+      <tr *ngFor="let read of reads">
         <td>{{read.ip}}</td>
         <td>{{read.epc}}</td>
         <td>{{read.readDate | date:'d/M/yy - h:mm:ss a'}}</td>

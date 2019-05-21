@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Logs: {{logsMock.length}}</h1>
+  <h1>Logs: {{logs.length}}</h1>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -10,11 +10,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let log of logsMock">
+      <tr *ngFor="let log of logs">
         <td>{{log.ip}}</td>
         <td>{{log.exception}}</td>
-        <td>{{log.stackTrace}}</td>
         <td>{{log.exceptionDate | date:'d/M/yy - h:mm:ss a'}}</td>
+        <td>{{log.stackTrace}}</td>
       </tr>
     </tbody>
   </table>

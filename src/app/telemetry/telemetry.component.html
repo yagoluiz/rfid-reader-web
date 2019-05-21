@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Telemetries: {{telemetriesMock.length}}</h1>
+  <h1>Telemetries: {{telemetries.length}}</h1>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -9,10 +9,10 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let telemetry of telemetriesMock">
+      <tr *ngFor="let telemetry of telemetries">
         <td>{{telemetry.ip}}</td>
-        <td>{{telemetry.temperature}}</td>
-        <td>{{telemetry.isConnection}}</td>
+        <td>{{telemetry.temperature}}°C</td>
+        <td>{{telemetry.isConnection ? 'Yes' : 'No'}}</td>
       </tr>
     </tbody>
   </table>
