@@ -12,9 +12,35 @@ For implementation of the services architecture, see the application [repository
 
 See the work [repository](https://github.com/yagoluiz/unb-dissertacao) for more details of the project.
 
+## Azure
+
+Serviços no Azure implementados no projeto:
+
+- App Service
+- App Service Plan (Linux)
+- Application Insights
+- Cosmos DB
+- Container Registry
+- IoT Hub
+- Service Bus
+- SQL Database (SQL Server)
+- Storage (Blob)
+
+![](img/azure_services.png)
+
 ## DevOps
 
-TODO: Inserir imagens de serviços utilizadas
+Pipeline de CI:
+
+![](img/ci.png)
+
+Pipeline de CD:
+
+![](img/cd.png)
+
+*Todos os recursos foram excluídos após finalização do trabalho*
+
+*All resources were deleted after the job was finalized*
 
 ## Instructions for run project
 
@@ -36,9 +62,33 @@ Para implementação da arquitetura de serviços, consulte o [repositório](http
 
 Consulte o [repositório](https://github.com/yagoluiz/unb-dissertacao) do trabalho para mais detalhes do projeto.
 
+## Azure
+
+Serviços no Azure implementados no projeto:
+
+- App Service
+- App Service Plan (Linux)
+- Application Insights
+- Cosmos DB
+- Container Registry
+- IoT Hub
+- Service Bus
+- SQL Database (SQL Server)
+- Storage (Blob)
+
+![](img/azure_services.png)
+
 ## DevOps
 
-TODO: Inserir imagens de serviços utilizadas
+Pipeline de CI:
+
+![](img/ci.png)
+
+Pipeline de CD:
+
+![](img/cd.png)
+
+*Todos os recursos foram excluídos após finalização do trabalho*
 
 ## Instruções para execução do projeto
 
